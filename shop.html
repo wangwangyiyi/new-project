@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/footer.css">
+    <link rel="stylesheet" href="./static/css/shop.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	<script src="./static/js/countdown.js"></script>
+
+<style>
+	.go-home {
+	position: fixed;
+	right: 28px;
+	width: 45px;
+	color: white;
+}
+.go-home-top p,i{
+	color: white;
+	margin-left: 3px;
+}
+
+.go-home-top{
+	width: 100%;
+	color: white;
+	padding: 10px 10px;
+	background: #ef4c59;
+}
+.go-home-bottow{
+	width: 100%;
+	color: white;
+	background: #505974;
+}
+.go-home-bottow i{
+	margin-left: 8px;
+}
+</style>
+	<title>展商详情</title>
+</head>
+<body class="body">
+
+
+	<!-- 头部开始 -->
+	<div class="container clearfix">
+		<div class="header margin-top-30 clearfix">
+			<div class="header-left">
+				<img src="./static/img/logo.png" alt="logo">
+			</div>
+			<div class="header-right">
+				<input type="text" class="margin-lr-10 header-right-search form-control" value="搜索">
+				<span class="search-ico glyphicon glyphicon-search"></span>
+				<span class="glyphicon glyphicon-tags"></span>
+				<select name="" class="margin-lr-10 header-right-select form-control" id="">
+					<option value="">internation-简体中文</option>
+				</select>
+				<a href="#">登录</a>/
+				<a href="#">注册</a>
+			</div>
+		</div>
+	<!-- 头部结束 -->
+	<div class="nav clearfix">
+		<ul class="nav nav-left">
+			<li><a href="index.html">首页</a></li>
+			<li><a class="active" href="shop.html">展商</a></li>
+			<li><a href="spectator.html">观众</a></li>
+			<li><a href="article.html">产品</a></li>
+			<li><a href="parenter.html">合作</a></li>
+			<li><a href="#">活动</a></li>
+		</ul>
+		<div class="nav-right text-right">
+			<div class="countdown">记录展会开幕还有&nbsp;&nbsp;<span id="day-day" class="red">99</span>&nbsp;&nbsp;天</div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<p class="btn-login"><a href="">立即参加</a></p>
+		</div>		 
+	</div>
+
+	<!-- 导航结束 -->
+		</div>
+
+<div class="go-home">
+		<div class="go-home-top">
+			<a href="">
+				<i class="fa fa-comment-o" style="font-size:24px"></i>
+				<p>联系我们</p>
+			</a>
+		</div>
+		<a href="">
+			<div onclick="btn()" class="margin-top-15 go-home-bottow">
+			<i class="fa fa-angle-up" style="font-size:36px"></i>
+		</div>
+		</a>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="banner-head margin-top-30">
+		<img src="./static/img/shop/banner-nav.png" alt="">
+	</div>
+	<div class="shop-nav">
+		<div class="container">
+			<div class="shop-nav-left clearfix">
+				<div class="shop-nav-left-list">
+					<h4 class="font-16">品牌提升</h4>
+					<p>扩大品牌知名度，扩大影响力</p>
+				</div>
+				<div class="shop-nav-left-list">
+					<h4 class="font-16">品牌提升</h4>
+					<p>扩大品牌知名度，扩大影响力</p>
+				</div>
+				<div class="shop-nav-left-list">
+					<h4 class="font-16">品牌提升</h4>
+					<p>扩大品牌知名度，扩大影响力</p>
+				</div>
+						<hr style="width: 100%;margin:0 auto;border: 0.5px solid #1f2b4c;">
+
+				<div class="shop-nav-left-list">
+					<h4 class="font-16">品牌提升</h4>
+					<p>扩大品牌知名度，扩大影响力</p>
+				</div>
+				<div class="shop-nav-left-list">
+					<h4 class="font-16">品牌提升</h4>
+					<p>扩大品牌知名度，扩大影响力</p>
+				</div>
+			</div>
+			<div class="shop-nav-right">
+				<div class="shop-nav-right-warp clearfix">
+					<h6 class="font-16 ">立即参会</h6>
+					<p class="font-25 ">申请成为大会厂商</p>
+					<div class="border shop-nav-right-warp-box ">立即参加</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 展商导航 -->
+	<div class="shop-list padding-top-88 text-center">
+		<div class="shop-brand">
+			<!-- <img src="./static/img/shop/maizi-1.png" alt=""> -->
+			<h1 class="left-border">&nbsp;&nbsp;展商一览</h1>
+			<!-- <img src="./static/img/shop/maizi-2.png" alt=""> -->
+
+		</div>
+			<p>二百余家精选展商，再亚博会舞台绽放光芒</p>
+	</div>
+
+<div class="container">
+	<div class="shop-main clearfix">
+		<div class="shop-main-left">
+			<h4 class="left-border">&nbsp;&nbsp;展商分类</h4>
+			<input type="text" placeholder="请输入展商名称" class="form-control">
+			<span class="glyphicon gllyphicon-search"></span>
+			<h4 class="left-border">&nbsp;&nbsp;字母索引</h4>
+			<div class="shop-main-left-table clearfix">
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">#</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">A</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">B</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">C</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">D</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">E</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">F</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">G</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">H</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">I</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">J</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">K</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">L</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">M</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">N</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">O</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">P</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">Q</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">R</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">S</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">T</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">U</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">V</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">W</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">X</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">Y</a></div>
+				<div class="shop-main-left-table-rows "><a class="shop-border" href="">Z</a></div>
+			</div>
+			<h4 class="left-border">&nbsp;&nbsp;展商分类</h4>
+			<div class="shop-main-left-table clearfix text-center">
+				<div class="left-box"><p>彩票游戏</p></div>
+				<div class="left-box"><p>彩票游戏</p></div>
+				<div class="left-box"><p>彩票游戏</p></div>
+			</div>
+			<div class="left-main-left-table-banner">
+				<img src="./static/img/shop/left-shop-1.png" alt="">
+				<img src="./static/img/shop/left-shop-2.png" alt="">
+			</div>
+		</div>
+
+
+		<div class="shop-main-right">
+			<div class="shop-main-right-left">
+				<img src="./static/img/shop/left-head.png" alt="">
+			</div>
+			<div class="shop-main-right-center">
+				<h3>博猫游戏</h3>
+				<p class="color">柏毛游戏拥有政府颁发的PAGCOOR博彩牌照，是继菲律宾博彩娱乐公司之后的又一 </p>
+				<span class="a9a9a9">展位</span>&nbsp;&nbsp;  
+				<span>S5</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+				<span  class="a9a9a9">类别</span> 
+				<span>彩票游戏</span>&nbsp;&nbsp;| &nbsp;&nbsp;
+				<span  class="a9a9a9">内容形式</span>&nbsp;&nbsp;&nbsp;
+				<span>电子展览</span>
+			</div>
+			<div class="shop-main-right-right padding-top-50">
+				<p class="border">查看产品</p>
+			</div>
+			<hr style="width: 100%;border: 0.5px solid #d7d7d7;">
+
+			<div class="clearfix"></div>
+			<div class="shop-main-right-head">
+				<h5 class="bold">产品列表</h5>
+				<ul>
+					<li><a href=""><img src="./static/img/shop/list-2.png" alt=""></a>
+						<p class="text-center margin-top-15">龙虎斗</p>
+					</li>
+					<li><a href=""><img src="./static/img/shop/list-2.png" alt=""></a>
+						<p class="text-center margin-top-15">龙虎斗</p>
+					</li>
+					<li><a href=""><img src="./static/img/shop/jian.png" alt=""></a>
+						<p class="text-center margin-top-15">全部产品</p>
+					</li>					
+				</ul>
+			</div>
+			<hr style="width: 100%;border: 0.5px solid #d7d7d7;">
+
+			<div class="clearfix"></div>
+			
+
+
+
+
+			<div class="shop-main-right-main margin-top-30">
+				<div class="shop-main-right-main-left">
+					<img src="./static/img/shop/shop-main-1.png" alt="">
+				</div>
+				<div class="shop-main-right-main-center">
+						<h3>博猫游戏</h3>
+					<p class="color">柏毛游戏拥有政府颁发的PAGCOOR博彩牌照，是继菲律宾博彩娱乐公司之后的又一 </p>
+					<span class="a9a9a9">展位</span>&nbsp;&nbsp;  
+					<span>S5</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<span  class="a9a9a9">类别</span> 
+					<span>彩票游戏</span>&nbsp;&nbsp;| &nbsp;&nbsp;
+					<span  class="a9a9a9">内容形式</span>&nbsp;&nbsp;&nbsp;
+					<span>电子展览</span>
+				</div>
+				<div class="shop-main-right-main-right padding-top-50">
+					<p class="border">查看详情</p>
+				</div>	
+			</div>
+			<div class="clearfix"></div>
+			<hr style="width: 100%;border: 0.5px solid #d7d7d7;">
+
+			<div class="shop-main-right-main margin-top-30">
+				<div class="shop-main-right-main-left">
+					<img src="./static/img/shop/shop-main-1.png" alt="">
+				</div>
+				<div class="shop-main-right-main-center">
+						<h3>博猫游戏</h3>
+					<p class="color">柏毛游戏拥有政府颁发的PAGCOOR博彩牌照，是继菲律宾博彩娱乐公司之后的又一 </p>
+					<span class="a9a9a9">展位</span>&nbsp;&nbsp;  
+					<span>S5</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<span  class="a9a9a9">类别</span> 
+					<span>彩票游戏</span>&nbsp;&nbsp;| &nbsp;&nbsp;
+					<span  class="a9a9a9">内容形式</span>&nbsp;&nbsp;&nbsp;
+					<span>电子展览</span>
+				</div>
+				<div class="shop-main-right-main-right padding-top-50">
+					<p class="border">查看详情</p>
+				</div>	
+			</div>
+			<div class="clearfix"></div>
+			<hr style="width: 100%;border: 0.5px solid #d7d7d7;">
+
+			<div class="shop-main-right-main margin-top-30">
+				<div class="shop-main-right-main-left">
+					<img src="./static/img/shop/shop-main-1.png" alt="">
+				</div>
+				<div class="shop-main-right-main-center">
+						<h3>博猫游戏</h3>
+					<p class="color">柏毛游戏拥有政府颁发的PAGCOOR博彩牌照，是继菲律宾博彩娱乐公司之后的又一 </p>
+					<span class="a9a9a9">展位</span>&nbsp;&nbsp;  
+					<span>S5</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<span  class="a9a9a9">类别</span> 
+					<span>彩票游戏</span>&nbsp;&nbsp;| &nbsp;&nbsp;
+					<span  class="a9a9a9">内容形式</span>&nbsp;&nbsp;&nbsp;
+					<span>电子展览</span>
+				</div>
+				<div class="shop-main-right-main-right padding-top-50">
+					<p class="border">查看详情</p>
+				</div>	
+			</div>
+			<div class="clearfix"></div>
+			<hr style="width: 100%;border: 0.5px solid #d7d7d7;">
+			<div class="text-center">
+				<ul class="pagination">
+				<li><a href="#">&laquo;</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+				<li class="bold"><a href="">第一页，共十页</a></li>
+			</ul>
+			</div>
+		
+		</div>
+
+			
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 脚部开始 -->
+<div class="clearfix">	</div>
+	<div class="footer-warp">
+			<div class="footer clearfix">
+				<div class="footer-left">
+					<div class="footer-left-top">
+						<img src="./static/img/logo-black.png" alt="">
+					</div>
+					<div class="footer-left-center">
+						<p>为你打开新局面</p>
+						<p> RIGHT PLACE, RIGHT PEOPLE</p>
+					</div>
+					<div class="footer-left-bottom">
+						<img src="./static/img/footer-left-ico.png" alt="">
+					</div>
+				</div>
+				<div class="footer-center">
+					<h5>联系方式</h5>
+					 <p>
+					 <span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;
+					 菲律宾 马尼拉 SMX展览中心
+					</p>
+					 <p>
+					<span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;&nbsp; 
+					2019年7月
+					</p>
+					 <p>
+					 	<span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;
+					 +63 945 503 1419 (周一至周日 8:00-18:00)</p>
+					 <p>
+					 	<span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;
+					 inquiry@phil-asiangamingexpo.com</p>
+				</div>
+				<div class="footer-right">
+					<h5>社交平台</h5>
+					<ul class="margin-top-30">
+						<li>
+							<a href=""><img src="./static/img/wx.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<li>
+							<a href=""><img src="./static/img/wb.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+						<li>
+							<a href=""><img src="./static/img/in.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+						<li>
+							<a href=""><img src="./static/img/gm.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+						<li>
+							<a href=""><img src="./static/img/fi.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+						<li>
+							<a href=""><img src="./static/img/fb.png" alt=""></a>
+						</li>
+					</ul>
+					<h6 class="margin-top-30">下载</h6>
+					<p class="margin-top-30">展示合同 | 规范标志</p>
+				</div>
+		<!-- 脚部结束 -->
+			</div>
+			<div class="copyright">
+				<p class="copyright-left">Coprright@phil-asiangamingexpo management Ltd.Co,
+				 phillippines,All right reserved | 隐私&免责申明 | 版权 
+				</p>
+				<div class="copyright-right">
+					<span class="glyphicon glyphicon-tags">&nbsp;internation-简体中文</span>					
+				</div>
+
+			</div>
+	</div>
+
+
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/ft-carousel.min.js"></script>
+<script type="text/javascript">
+	$("#carousel_1").FtCarousel();
+</script>
+<script>
+	function btn(){
+    var obtn = document.getElementById('btn');
+    obtn.onclick = function(){             
+        var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+        document.documentElement.scrollTop = document.body.scrollTop = -200;                       
+    };
+}
+</script>
+</html>

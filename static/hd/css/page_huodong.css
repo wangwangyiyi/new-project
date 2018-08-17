@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:#000;font-family:"微软雅黑","Microsoft Yahei"}
+h1.coming{font: bold 40px Arial, Helvetica, sans-serif; color:#fff; text-align:center; margin:100px 0;}
+h2.white_title{background: #000 url('../images/title_bg_white.png') no-repeat bottom center!important;font: bold 40px Arial, Helvetica, sans-serif; color:#fff; text-align:center; margin:30px 0; padding:30px 0;}
+
+.centerme{margin：0 auto;}
+#mainfooter{background:#0c101b;padding:20px 0;}
+#mainfooter h2{font: bold 14px arial; color:#9e9fa4; padding:15px 0;}
+#mainfooter p{font: bold 14px arial; color:#9e9fa4; padding:15px 0;}
+#mainfooter p.copy{font: normal 14px arial; color:#9e9fa4; padding:15px 0;}
+#mainfooter p.links{font: bold 14px arial; color:#9e9fa4; padding:10px 0;}
+#mainfooter ul.list {margin:0; padding:0;}
+#mainfooter ul.list li{padding:10px 0; margin:0; list-style:none;}
+#mainfooter ul.list li.icons{padding:7px 0;}
+#mainfooter a{font: normal 14px arial; color:#9e9fa4; padding:15px 0;text-decoration:none;}
+#mainfooter a:hover{text-decoration:underline;}
+.icons{margin-right:20px;}
+#party{background: url('../images/background_party.jpg') no-repeat top center; min-height: 587px;}
+.nav-fix{border:none; margin:0;}
+ul.nav-page li {background:none;}
+
+ul.nav-page li.active a{background: transparent url('../images/nav_bg.png') no-repeat bottom center!important; color:#e70012!important;}
+ul.nav-page li:hover a{background: transparent url('../images/nav_bg_hover.png') no-repeat bottom center!important; }
+.nav-position{top:10px;}
+.navbar-brand{padding：0!important;}
+.toprightnav{padding:15px 0 0 0!important; display:inline-block!important;}
+.navbordersmall{padding:0 15px;}
+.exhibitdays{margin: 0 15px;}
+.remaining{font: normal 18px/50px arial; color:#e70315;} 
+a.register{background: rgb(231,1,19);
+background: linear-gradient(90deg, rgba(231,1,19,1) 35%, rgba(243,91,104,1) 100%);font: normal 14px arial; color:#fff!important; padding: 10px 15px;}
+a.register:hover{background: rgb(224,0,18);
+background: linear-gradient(90deg, rgba(224,0,18,1) 35%, rgba(232,81,94,1) 100%);}
+
+.page-footermenu{padding:8px; position:relative;top:8px;}
+.page-footermenu a{background:none!important; font: normal 14px arial; padding:0!important; }
+.page-footermenu a:hover{background:none; text-decoration:none!important;}
+
+ul.page-footermenu-drop{border-radius:3px;}
+ul.page-footermenu-drop li {padding:0!important;}
+ul.page-footermenu-drop li a{background:none!important; font: normal 14px/20px arial; padding: 5px 10px!important; }
+ul.page-footermenu-drop li a:hover{background:#f5f5f5!important; text-decoration:none!important;}
+p.reverse{color:#fff;}
+.huge_contact{font: bold 30px arial; color:#fff; text-align:left;}
+
+/*uncompiled*/
+.margin-fix{margin-right:-30px !important;}
+
+@media (max-width:1028px) {
+	}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:768px) {
+	.navbar-brand img{max-width:200px;}
+	.navbordersmall{padding:0 10px;}
+}
+@media (max-width:767px) {
+#party{background: url('../images/background_party2.jpg') no-repeat top center; min-height: 500px; background-size:auto 500px;}
+.navbar-form{border-top:none;}
+.navbordersmall{border-bottom: solid 1px #ccc; padding: 0 10px;}
+.toprightnav{padding:10px!important;}
+.nav-xs-fix50{width:100%; margin:0 auto; text-align:center;}
+.nav-xs-fix50 li{position:relative; display:inline-block;}
+h1.coming{font: bold 30px Arial, Helvetica, sans-serif; color:#fff; text-align:center; margin:70px 0;}
+h2.white_title{background: #000 url('../images/title_bg_white.png') no-repeat bottom center!important;font: bold 30px Arial, Helvetica, sans-serif; color:#fff; text-align:center; margin:20px 0; padding:20px 0;}
+.huge_contact{font: bold 20px arial; color:#fff; text-align:center;}
+}

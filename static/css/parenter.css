@@ -1,0 +1,189 @@
+.banner-top{
+	width: 100%;
+	height: 498px;
+} 
+.banner-top img{
+	width: 100%;
+	height: 100%;
+}
+.banner-parenter-warp{
+	background: #020815;
+	padding-bottom: 100px;
+}
+.parenter-banner{
+	width: 100%;
+	padding-top: 90px;
+}
+.parenter-banner>img{
+	padding-bottom: 50px;
+
+}
+.parenter-banner h3{
+	color: white;
+	font-size: 40px;
+
+}
+.parenter-banner ul{
+	padding-left: 0;
+}
+
+.parenter-banner p{
+	color: #87888b;
+	padding-top: 15px;
+	font-size: 21px;
+	padding-bottom: 15px;
+}
+#carousel_4 li{
+	width: 100%;
+}
+#carousel_4 img{
+	width: 100%!important;
+	height: 100%!important;
+}
+/*轮播结束*/
+.start-parenter{
+	background: #002167;
+	width: 100%;
+}
+.start-parenter-warp{
+	margin: 0 170px;
+}
+.start-parenter img{
+	width: 100%;
+}
+
+.start-parenter h2{
+	margin:0;
+	font-size: 36px;
+}
+.start-parenter h2,h5,p{
+	color: white;
+
+}
+.parenter-box{
+	width: 33.33%;
+	margin: 50px 0;
+	float: left;
+
+}
+.parenter-tel h2{
+	margin-top: 20px;
+	color: #fff;
+	display: inline-block;
+}
+.parenter-tel{
+	width: 100%;
+	padding: 80px 0!important;
+	background: #002064;
+
+}
+.banner-parenter-warp>.container,.tel-warp{
+	width: 70%;
+	margin: 0 auto;
+
+}
+.parenter-tel p{
+	font-size: 18px;
+	color: #5572af;
+	display: inline-block;
+}
+.parenter-tel-box{
+	width: 50%;
+	margin-top: 60px;
+	padding-left: 30px;
+	float: left;
+
+}
+.parenter-tel-box li{
+	color: #b0b3be;
+}
+.parenter-tel-left{
+	width: 20%;
+	padding: 0px;
+}
+.parenter-tel-left img{
+	width: 100%
+}
+
+.parenter-tel-right{
+	width: 80%;
+	padding: 0px 10px 10px 15px;
+
+}
+.white{
+	background: white;
+}
+.parenter-tel-right li{
+	line-height: 22px;
+	height: 22px;
+	font-size: 15px;
+}
+
+.parenter-tel-right p{
+	color: #fff;
+}
+.parenter-tel-left,.parenter-tel-right{
+	float: left;
+}
+/*服务信息结束*/
+.parenter{
+	width: 100%;
+}
+.parenter h1{
+	color: black;
+	padding-top: 90px;
+}
+.parenter p{
+	color: #747474;
+	font-size: 23px;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+.parenter ul{
+	margin: 0 170px;
+	padding-bottom: 150px;
+
+}
+
+
+.parenter li{
+	width: 16%;
+	display: inline-block;
+}
+.parenter img{
+	padding: 15px 24px;
+	width: 100%;
+}
+
+.parenter-p{
+	margin: 15px;
+	padding: 0!important;
+}
+
+.parenter-p p{
+	height: 56px;
+	line-height: 56px;
+}
+.parenter-p p:hover{
+	color: white;
+}
+/*友商*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

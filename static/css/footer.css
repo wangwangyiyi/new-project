@@ -1,0 +1,40 @@
+.footer-warp{
+	width: 100%;
+	background: #0c101b;
+}
+.footer{
+	padding-top: 50px;
+	width: 90%;
+	margin: 0 auto;
+}
+.footer p{
+	color: #9e9fa4;
+	line-height: 30px;
+}
+.footer h6,h5{
+	color: #dededf;
+}
+
+.footer-left,.footer-center,.footer-right{
+	width: 33.33%;
+	padding-left: 50PX;
+	float: left;
+}
+.footer-right li{
+	display: inline-block;
+}
+.copyright{
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.copyright-left{
+	float: left;
+	padding-left: 50PX;
+	
+
+}
+.copyright-right{
+	float: right;
+	padding-right: 90px;
+}

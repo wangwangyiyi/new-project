@@ -1,0 +1,91 @@
+#carousel_4,#carousel a{
+	width: 100%;
+	height: 100%;
+}
+#carousel_4 img{
+	width: 100%;
+	height: 100%;
+}
+.spectator-join{
+	background: url(../img/spectator/bg.png);
+	background-position:100% 100%;
+	width: 100%;
+	padding-bottom: 66px;
+}
+.spectator-join h1{
+	padding-top: 100px;
+	padding-bottom: 50px;
+	color: #222222;
+}
+.spectator-wrap{
+	margin: 0 170px;
+}
+.spectator-box{
+	height: 480px;
+	width: 33.33%;
+	padding: 30px 20px;
+	float: left;
+}
+.spectator-box>img{
+	width: 100%;
+}
+
+.spectator-box>p{
+	padding: 25px 0;
+	font-size: 16px;
+	color: white!important;
+	background: -webkit-linear-gradient(left, #e70214 , #f35b68); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #e70214, #f35b68); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #e70214, #f35b68); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #e70214 , #f35b68); 
+}
+.leader-say{
+	width: 100%;
+}
+.leader-say img{
+	width: 100%;
+}
+.ticket{
+	background: url(../img/spectator/bg-join.png);
+	background-position:100% 100%;
+	padding: 50px 40px;	
+}
+.ticket-list{
+	width: 80%;
+	margin: 0 auto;
+}
+.ticket-list-left,.ticket-list-right{
+	padding: 50px 40px;
+	width: 50%;
+	float: left;
+}
+.ticket-list img{
+	width: 100%;
+}
+.banner-bottow{
+	background: url(../img/spectator/banner-bg.png);
+	background-position:100% 100%;
+	width: 100%;
+}
+.jcImgScroll{
+	width: 66%;
+	margin: 30px auto;
+}
+
+.banner-bottow img{
+	width: 100%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

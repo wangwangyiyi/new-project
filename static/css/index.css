@@ -1,0 +1,351 @@
+.shop{
+	background: #0c101b;
+	width: 100%;
+}
+.shop h3,h5,p{
+ 	/*color: #fbdfe0;*/
+	line-height: 30px;
+}
+
+.brand-head{
+	float: left;
+	width: 33.33%;
+	color: #f4f4f5;
+}
+.brand-head h3{
+	font-size: 30px;
+}
+.brand-head p{
+	border: 1px solid #f4f4f5;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.brand-list{
+	float: left;
+	width: 66.66%;
+}
+.brand-list ul{
+	width: 100%;
+}
+.brand-list ul li{
+	width: 25%;
+	padding: 10px 0;
+	float: left;
+}
+.brand-place,.brand-time{
+	width: 50%;
+	float: left;
+	height: 320px;
+}
+.brand-place-desc{
+	width: 100%;
+	padding-left: 35px;
+background: -webkit-linear-gradient(left, #eb2232 , #f35b68); 
+    background: -o-linear-gradient(right, #eb2232, #f35b68); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #eb2232, #f35b68); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #eb2232 , #f35b68);
+     }
+.brand-place-desc-left{
+	width: 66.66%;
+	float: left;
+}
+.brand-place-desc-right{
+	width: 33.33%;
+	float: left;
+}
+.brand-place-desc-phill{
+	display: inline-block;
+}
+.brand-place-desc-check,.brand-time-desc-right>p{
+	border: 1px solid #f4f4f5;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.brand-place-pic ul{
+	width: 100%;
+}
+.brand-place-pic ul li{
+	width: 33.33%;
+	float: left;
+}
+.brand-place-pic ul img{
+	width: 100%;
+}
+
+.brand-time-desc p{
+	color: white;
+}
+.brand-time-desc{
+	width: 100%;
+	padding-left: 35px;
+
+	background: #141a2c;
+}
+.brand-time-desc-left{
+	width: 66.66%;
+	float: left;
+}
+.brand-time-desc-right{
+	width: 33.33%;
+	float: left;
+}
+.brand-time-pic ul{
+	width: 100%;
+}
+.brand-time-pic ul li{
+	width: 50%;
+	float: left;
+}
+/*日程安排结束*/
+.yabo-states h2{
+	font-size:40px;
+}
+.yabo-states p{
+	font-size:18px;
+
+}
+.yabo-states-pic{
+	width: 100%;
+}
+.yabo-states-pic img{
+	width: 100%;
+	height: 100%;
+}
+.yabo-states-pic-right,.yabo-states-pic-left,.yabo-states-pic-center{
+	width: 33.33%;
+	padding: 5px;
+	float: left;
+}
+
+.yabo-states-pic-center-l,.yabo-states-pic-center-r{
+	width: 50%;
+	float: left;
+}
+.yabo-states-pic-center-r{
+	padding-left: 5px;
+}
+.yabo-states-pic-center-l-a{
+	padding-bottom: 5px;
+	width: 100%;
+	display: block;
+}
+.yabo-states-pic-right-t a{
+	width: 50%;
+	float: left;
+	padding-left: 5px;
+	display: block;
+}
+.yabo-states-pic-right-b{
+	padding-top: 5px;
+	padding-left: 5px;
+
+}
+.yabo-states p{
+	color: #000;
+}
+/*窗口展示*/
+
+.yabo-states-list-main{
+	width: 100%;
+}
+.yabo-states-list{
+	width: 25%;
+	padding: 5px 10px;
+	float: left;
+}
+.yabo-states-list:hover{
+	background: -webkit-linear-gradient(left, #e70214 , #f35b68); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #e70214, #f35b68); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #e70214, #f35b68); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #e70214 , #f35b68); 
+    color: white;
+}
+.yabo-states-list-pic img{
+	width: 100%;
+}
+.yabo-states-desc{
+	color: black;
+	padding: 5px 20px;
+}
+.yabo-states-desc h4{
+ font-weight: bold;
+}
+.yabo-states-desc-p{
+	display: inline-block;
+	float: right;
+	color: #e70214; 
+}
+.yabo-states-more{
+	width: 100%;
+}
+.more-states{
+	border: 1px solid red;
+	width: 150px;
+	color: red!important;
+	height: 50px;
+	margin:20px auto 50px auto;
+	line-height: 50px;
+	font-size: 16px;
+}
+/*参会指南开始*/
+
+
+.join{
+	width: 100%!important;
+	background: #020815;
+}
+.example{
+	width: 100%!important;
+	margin: 10 auto!important;
+}
+.example-1{
+	width: 80%!important;
+	margin: 0 auto!important;
+}
+.join>p{
+	color: #75777b;
+	font-size: 18px;
+
+}
+.join-pic img{
+	width: 100%;
+}
+.join-pic-left,.join-pic-right{
+	width: 50%;
+	float: left;
+}
+.join-pic-left-1{
+	height: 33.33%;
+}
+.join-pic-left-2{
+	height: 66.66%;
+}
+.banner-join>li{
+	width: 80%;
+}
+.banner-join>img{
+	height: 750px;
+	width: 100%;
+}
+.join-whats{
+	width: 100%;
+	background: url(../img/bg-2.png);
+	background-position:100% 100%;
+
+}
+.join-whats-desc{
+	padding: 20px 300px;
+}
+.join-whats-list{
+	width: 33.33%;
+	float: left;
+}
+.why-join{
+	background: url(../img/bg-1.png);
+	background-size:100% 100%;
+
+}
+.why-join h3{
+	color: #fff;
+}
+
+.why-join p{
+	color: #80828a;
+	font-size: 18px;
+	margin-bottom: 0;
+}
+.why-join-list{
+	width: 50%;
+	float: left;
+
+}
+
+.why-join-list h3{
+	display: inline-block;
+}
+.why-join-list p{
+	font-size: 18px;
+	color: #9e9fa4;
+	padding-left: 35px;
+}
+/*友链开始*/
+.banner-vivo img{
+	width: 100%;
+}
+.parenter{
+	width: 100%;
+}
+.parenter h3{
+	font-weight: bold;
+}
+
+.parenter ul{
+	width: 100%;
+}
+.parenter li{
+	padding: 15px 15px;
+	width: 17%;
+	float: left;
+}
+.parenter-p{
+	height: 56px;
+	padding: 15px;
+}
+.parenter-p p:hover{
+	color: white;
+}
+
+.countdow{
+	background: url(../img/countdow.png);
+	padding-bottom: 50px;
+}
+.countdow p,.countdow h3{
+	color:white; 
+}
+.countdow h2{
+	color: white;
+	margin-bottom: 0;
+}
+
+.num{
+	width: 25%;
+	float: left;
+	background: #d12c34;
+
+}
+.warp{
+	width: 35%;
+	margin: 0 auto;
+}
+.box{
+	width: 40px;
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 5px;
+	background: white;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

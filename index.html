@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+     <link rel="icon" href="./static/images/page_logo_favico.png" type="image/x-icon" />
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./static/css/page_huodong.css"  rel="stylesheet">
+    
+    <link rel="stylesheet" href="./static/css/ft-carousel.css">
+
+<style>
+.example {width: 100%;height: 630px;font-size: 40px;text-align: center;margin: 10px 0 auto;background-color: #464576;}
+.carousel-item{line-height: 336px;color: #fff;font-family:  Arial Black}
+.example img{
+	height: 100%;
+}
+.go-home {
+	position: fixed;
+	right: 28px;
+	width: 45px;
+	color: white;
+}
+.go-home-top p,i{
+	color: white;
+	margin-left: 3px;
+}
+
+.go-home-top{
+	width: 100%;
+	color: white;
+	padding: 10px 10px;
+	background: #ef4c59;
+}
+.go-home-bottow{
+	width: 100%;
+	color: white;
+	background: #505974;
+}
+.go-home-bottow i{
+	margin-left: 8px;
+}
+
+</style>
+	<title>万题库首页</title>
+</head>
+<body class="body">
+
+	<header id="mainhead" style="background:#f8f8f8;">
+ <div class="container">
+<nav class="navbar navbar-default nav-fix">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#page-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="./static/images/page_main_logo.png" class="img-responsive"></a>
+    </div>
+
+
+    <div class="collapse navbar-collapse margin-fix" id="page-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown navbordersmall">
+          <a href="#" class="dropdown-toggle toprightnav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./static/images/icon_international_blk.png"> 简体中文 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">简体中文 </a></li>
+            <li><a href="#">繁体中文</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </li>
+        <li class="navbordersmall"><a href="#" class="toprightnav">登录</a> / <a href="#" class="toprightnav">注册</a></li>
+        
+        <li class="visible-xs"><a href="index.html">首页</a></li>
+        <li class="visible-xs"><a href="#">展商</a></li>
+        <li class="visible-xs"><a href="spectator.html">观众</a></li>
+        <li class="visible-xs"><a href="#">产品</a></li>
+        <li class="visible-xs"><a href="parenter.html">合作</a></li>
+
+        <li class="visible-xs active"><a href="huodong.html">活动</a></li>
+      </ul>
+      
+      <form class="navbar-form navbar-right">
+        <div class="form-group nav-position">
+        <div class="input-group">
+      <input type="text" class="form-control" placeholder="搜索">
+      <span class="input-group-btn">
+      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+       </div>
+       </div>
+         </form>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+  <ul class="nav navbar-nav hidden-xs nav-page">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#">展商</a></li>
+        <li><a href="spectator.html">观众</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="parenter.html">合作</a></li>
+        <li class="active"><a href="huodong.html">活动</a></li>
+      </ul>
+      <ul class="nav navbar-nav pull-right nav-xs-fix50">
+      <li class="exhibitdays">离展会开始剩 <span id="day-day" class="remaining">99</span> 天</li>
+      <li><a href="#" class="register">立即参加</a></li>
+      </ul>
+</nav>
+</div>
+</header>
+
+	<!-- 导航结束 -->
+	</div>
+	<div class="go-home">
+		<div class="go-home-top">
+			<a href="">
+				<i class="fa fa-comment-o" style="font-size:24px"></i>
+				<p>联系我们</p>
+			</a>
+		</div>
+		<a href="">
+			<div onclick="btn()" class="margin-top-15 go-home-bottow">
+			<i class="fa fa-angle-up" style="font-size:36px"></i>
+		</div>
+		</a>
+	</div>
+
+<!-- 轮播开始 -->
+
+		<div class="example">
+			<div class="ft-carousel" id="carousel_1">
+				<ul class="carousel-inner">
+					<li class="carousel-item"><video src="./static/video/1.mp4" controls="controls" width="100%" height="100%"></video></li>
+				
+					<li class="carousel-item"><a href=""><img src="./static/img/banner-1.png" alt="arr" /></a></li>
+					<li class="carousel-item"><a href=""><img src="./static/img/banner-2.png" alt="arr" /></a></li>
+					<li class="carousel-item"><a href=""><img src="./static/img/banner-3.png" alt="arr" /></a></li>
+					<li class="carousel-item"><a href=""><img src="./static/img/banner-4.png" alt="arr" /></a></li>
+				
+				</ul>
+			</div>
+		</div>
+<!-- 轮播结束 -->
+
+<div class="shop padding-top-88 clearfix">
+	<div class="container">
+		<div class="brand-head">
+		<div class="brand">
+			<h3>PAGE重量级参展商</h3>	
+		</div>
+		<p class="margin-top-30 text-center"><a href="">查看入住参展商</a></p>
+	</div>
+	<div class="brand-list text-center margin-top-30">
+		<ul>
+			<li><a href=""><img src="./static/img/baoshi.png" alt=""></a></li>
+			<li><a href=""><img src="./static/img/bomao.png" alt=""></a></li>
+			<li><a href=""><img src="./static/img/gaming.png" alt=""></a></li>
+			<li><a href=""><img src="./static/img/tc.png" alt=""></a></li>
+			<li><a href=""><img src="./static/img/game.png" alt=""></a></li>
+			<li><a href=""><img src="./static/img/lebo.png" alt=""></a></li>
+			<li><a href=""><img src="./static/img/vr.png" alt=""></a></li>
+			<li><a href=""><img src="./static/img/playstar.png" alt=""></a></li>
+		</ul>
+	</div>
+
+	<div class="brand-place">
+		<div class="brand-place-desc clearfix">
+			<div class="brand-place-desc-left">
+				<h5>展会地点</h5>
+				<p class="font-25"> 菲律宾 马尼拉 SMX展览中心</p>
+				<p class="brand-place-desc-phill">Seashell Ln Pasay,1300 Metro Manlia Phillippines</p>
+			</div>
+			<div class="brand-place-desc-right">
+				<p class="brand-place-desc-check margin-top-30 text-center"><a href="">查看展位</a></p>				
+			</div>
+		</div>
+		<div class="brand-place-pic">
+			<ul>
+				<li><a href=""><img src="./static/img/place-1.png" alt=""></a></li>
+				<li><a href=""><img src="./static/img/place-2.png" alt=""></a></li>
+				<li><a href=""><img src="./static/img/place-3.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="brand-time">
+		<div class="brand-time-pic">
+			<ul>
+				<li><a href=""><img src="./static/img/time-1.png" alt=""></a></li>
+				<li><a href=""><img src="./static/img/time-2.png" alt=""></a></li>
+			</ul>
+		</div>
+		<div class="brand-time-desc">
+			<div class="brand-time-desc-left">
+				<h5>展会时间</h5>
+				<p class="font-25">2019年7月6日 - 7 月16 日</p>
+				<p>THE START TIME IS JULY 2019</p>
+			</div>
+			<div class="brand-time-desc-right">`
+				<p class="margin-top-30 text-center"><a href="">查看日程</a></p>
+			</div>
+		</div>
+	</div>
+	
+	</div>
+</div>
+<!-- 日常安排结束 -->
+
+
+<div class="yabo-states padding-top-88 text-center">
+	<h2>亚博会动态</h2>
+	<p class="font-16 margin-top-30">下一个爆款产品诞生地：亚博会是您最新分量产品的平台</p>
+	<div class="yabo-states-pic clearfix margin-top-30">
+		<div class="yabo-states-pic-left">
+			<a href=""><img src="./static/img/states-l.png" alt=""></a>
+		</div>
+		<div class="yabo-states-pic-center">
+			<div class="yabo-states-pic-center-l">
+				<a class="yabo-states-pic-center-l-a" href=""><img src="./static/img/states-c-l.png" alt=""></a>
+				<a href=""><img src="./static/img/states-c-l.png" alt=""></a>
+			</div>
+			<div class="yabo-states-pic-center-r">
+				<a href=""><img src="./static/img/states-c-r.png" alt=""></a>
+				
+			</div>
+
+		</div>
+		<div class="yabo-states-pic-right">
+			<div class="yabo-states-pic-right-t clearfix">
+				<a href=""><img src="./static/img/states-r-t.png" alt=""></a>
+				<a href=""><img src="./static/img/states-r-t.png" alt=""></a>
+
+			</div>
+			<div class="yabo-states-pic-right-b">
+				<a href=""><img src="./static/img/states-r-b.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 窗口展示 -->
+	<div class="container clearfix" >
+		<div class="yabo-states-list-main margin-top-30 clearfix">
+			<div class="yabo-states-list">
+				<div class="yabo-states-list-pic">
+					<img src="./static/img/states-list.png" alt="">
+				</div>
+				<div class="yabo-states-desc clearfix text-left">
+					<h4>你可以在PAGE看到什么</h4>
+					<p>我们尊重展商权益，所有欺诈和不愉快额偶会被下架处理。我们竭尽全力打造一个孵化爆款平台</p>
+					<span>2018 7-20</span>
+					<p class="yabo-states-desc-p">阅读详情&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></p>
+				</div>
+			</div>
+			<div class="yabo-states-list">
+				<div class="yabo-states-list-pic">
+					<img src="./static/img/states-list.png" alt="">
+				</div>
+				<div class="yabo-states-desc clearfix text-left">
+					<h4>动态公告名字</h4>
+					<p>我们尊重展商权益，所有欺诈和不愉快额偶会被下架处理</p>
+					<span>2018 7-20</span>
+					<p class="yabo-states-desc-p">阅读详情&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></p>
+				</div>
+			</div>
+			<div class="yabo-states-list">
+				<div class="yabo-states-list-pic">
+					<img src="./static/img/states-list.png" alt="">
+				</div>
+				<div class="yabo-states-desc clearfix text-left">
+					<h4>动态公告名字</h4>
+					<p>我们尊重展商权益，所有欺诈和不愉快额偶会被下架处理</p>
+					<span>2018 7-20</span>
+					<p class="yabo-states-desc-p">阅读详情&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></p>
+				</div>
+			</div>
+			<div class="yabo-states-list">
+				<div class="yabo-states-list-pic">
+					<img src="./static/img/states-list.png" alt="">
+				</div>
+				<div class="yabo-states-desc clearfix text-left">
+					<h4>动态公告名字</h4>
+					<p>我们尊重展商权益，所有欺诈和不愉快额偶会被下架处理</p>
+					<span>2018 7-20</span>
+					<p class="yabo-states-desc-p">阅读详情&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="yabo-states-more">
+			<a href=""><p class="border more-states text-center">更多动态</p></a>
+		</div>
+	</div>
+</div>
+<!-- 动态结束 -->
+
+<div class="join text-center padding-top-88">
+	<h1 class="white">参会指南</h1>
+	<p>帮您快速了解展会周边的衣食住行</p>
+		<div class="example example-1">
+			<div class="margin-top-30 ft-carousel" id="carousel_2">
+				<ul class="carousel-inner banner-join">
+					<!-- <li class="carousel-item">
+						<a href="">
+							<div class="join-pic clearfix">
+								<div class="join-pic-left">
+									<a class="join-pic-left-1" href=""><img src="./static/img/tour.png" alt=""></a>
+									<a  class="join-pic-left-2" href=""><img src="./static/img/hotel.png" alt=""></a>
+								</div>
+								<div class="join-pic-right">
+									<a href=""><img src="./static/img/car.png" alt=""></a>
+									<a href=""><img src="./static/img/dining.png" alt=""></a>
+									<a href=""><img src="./static/img/orr.png" alt=""></a>	
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="carousel-item">
+						<a href="">
+							<div class="join-pic margin-top-30 clearfix">
+								<div class="join-pic-left">
+									<a href=""><img src="./static/img/tour.png" alt=""></a>
+									<a href=""><img src="./static/img/hotel.png" alt=""></a>
+								</div>
+								<div class="join-pic-right">
+									<a href=""><img src="./static/img/car.png" alt=""></a>
+									<a href=""><img src="./static/img/dining.png" alt=""></a>
+									<a href=""><img src="./static/img/orr.png" alt=""></a>	
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="carousel-item">
+						<a href="">
+							<div class="join-pic margin-top-30 clearfix">
+								<div class="join-pic-left">
+									<a href=""><img src="./static/img/tour.png" alt=""></a>
+									<a href=""><img src="./static/img/hotel.png" alt=""></a>
+								</div>
+								<div class="join-pic-right">
+									<a href=""><img src="./static/img/car.png" alt=""></a>
+									<a href=""><img src="./static/img/dining.png" alt=""></a>
+									<a href=""><img src="./static/img/orr.png" alt=""></a>	
+								</div>
+							</div>
+						</a>
+					</li> -->
+						<li class="carousel-item"><a href=""><img src="./static/img/banner-bottow.png" alt="arr" /></a></li>
+				</ul>
+			</div>
+		</div>
+	<div class="container padding-top-88 join-whats">
+		<div class="join-logo ">	
+			<img src="./static/img/join-logo.png" alt="./static/img/join-logo.png">
+		</div>
+		<h1>什么是亚博会</h1>
+		<p class="join-whats-desc">亚博会是菲律宾政府首个支持的博彩行业博览会，展览会同期举行发布会和颁奖典礼。亚博会致力于建立一个可信，公平的平台，通过会展来影响和引导行业的发展，最终形成一个更好更自律更自信的行业平台</p>
+		<div class="join-whats-list padding-bottow-50">
+			<p class="red">200家</p>
+			<p>两百家商户展示商品</p>
+			<p class="border">查看展商</p>
+		</div>
+		<div class="join-whats-list">
+			<p class="red">30000名</p>
+			<p>展会预计迎来三万名专业观众</p>
+			<p class="border">立即参加</p>
+		</div>
+		<div class="join-whats-list">
+			<p class="red">15000平米</p>
+			<p>展会面积达到15000</p>
+			<p class="border">查看座位</p>
+		</div>
+	</div>
+</div>
+<!--  为什么-->
+<div class="why-join text-center">
+	<div class="container padding-top-50">
+		<h3>为什么要加入亚博会</h3>
+	<p>最具价值的大型展会，2019年7月，你没有理由不来</p>
+		<div class="box-line"></div>
+	<div class="why-join-list text-left">
+		<div class="box-shadow"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<h3>最新趋势</h3>
+		<p>200家巨头展示最新成果和产品</p>
+		<div class="line">
+			<img src="./static/img/line_03.png" alt="">
+		</div>
+	</div>
+	<div class="why-join-list text-left">
+		<div class="box-shadow"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<h3>最新趋势</h3>
+		<p>200家巨头展示最新成果和产品</p>
+		<div class="line">
+			<img src="./static/img/line_03.png" alt="">
+		</div>
+	</div>
+	<div class="why-join-list text-left">
+		<div class="box-shadow"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<h3>最新趋势</h3>
+		<p>200家巨头展示最新成果和产品</p>
+		<div class="line">
+			<img src="./static/img/line_03.png" alt="">
+		</div>
+	</div>
+	<div class="why-join-list text-left">
+		<div class="box-shadow"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<h3>最新趋势</h3>
+		<p>200家巨头展示最新成果和产品</p>
+		<div class="line">
+			<img src="./static/img/line_03.png" alt="">
+		</div>
+	</div>
+	<div class="why-join-list text-left">
+		<div class="box-shadow"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<h3>最新趋势</h3>
+		<p>200家巨头展示最新成果和产品</p>
+		<div class="line">
+			<img src="./static/img/line_03.png" alt="">
+		</div>
+	</div>
+	<div class="why-join-list text-left">
+		<div class="box-shadow"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<h3>最新趋势</h3>
+		<p>200家巨头展示最新成果和产品</p>
+		<div class="line">
+			<img src="./static/img/line_03.png" alt="">
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="baner-vivo text-center padding-top-88">
+	<img src="./static/img/vivo-banner.png" alt="">
+</div>
+<!-- vivo -->
+
+<div class="container text-center">
+	<div class="parenter clearfix">
+		<h3>品牌</h3>
+		<p class="font-16">参展企业展示</p>
+		<ul>
+			<li><img src="./static/img/link-1.png" alt=""></li>
+			<li><img src="./static/img/link-2.png" alt=""></li>
+			<li><img src="./static/img/link-3.png" alt=""></li>
+			<li><img src="./static/img/link-4.png" alt=""></li>
+			<li><img src="./static/img/link-5.png" alt=""></li>
+			<li><img src="./static/img/link-1.png" alt=""></li>
+			<li class="border parenter-p"><a href=""><p>所有展商</p></a></li>
+		</ul>
+	</div>
+	<div class="parenter clearfix">
+		<h3>战略合作</h3>
+		<p class="font-16">亚博会战略合作伙伴</p>
+		<ul>
+			<li><img src="./static/img/link-2.png" alt=""></li>
+			<li><img src="./static/img/link-3.png" alt=""></li>
+		</ul>
+	</div>
+	<div class="parenter clearfix">
+		<h3>合作伙伴</h3>
+		<p class="font-16">想要在此发展，可以联系我们</p>
+		<ul>
+			<li><img src="./static/img/link-4.png" alt=""></li>
+			<li><img src="./static/img/link-5.png" alt=""></li>
+		</ul>
+	</div>
+</div>
+<!-- 合作伙伴结束 -->
+
+
+<div class="countdow text-center">
+	<h2 class="margin-top-30 padding-top-88">离2019年7月6日展会开始</h2>
+	<div class="warp clearfix padding-top-88">
+		<div class="num">
+			<div  id ="day" class="box"></div>
+			<p class="font-25">天</p>
+		</div>
+		<div class="num">
+			<div  id="hour" class="box"></div>
+			<p class="font-25">时</p>
+		</div>
+		<div class="num">
+			<div id="min" class="box"></div>
+			<p class="font-25">分</p>
+		</div>
+		<div class="num">
+			<div id="miao" class="box"></div>
+			<p class="font-25">秒</p>
+		</div>
+	</div>
+	<div class="countdow-desc">
+		<h3>参展观众人数已达25.739</h3>
+		<p class="border-white">立即参加</p>
+	</div>
+
+</div>
+
+<!-- 脚部开始 -->
+<div class="clearfix">	</div>
+
+<footer id="mainfooter">
+<div class="container">
+<div class="row">
+	<div class="col-md-4 col-sm-4">
+	<p><img src="./static/images/page_logo_reverse.png" class="img-responsive"></p>
+	<p>为你打开新局面<br>
+	Right Place, Right People.</p>
+	<p><img src="./static/images/pcor_logo.png">
+	</div>
+	<div class="col-md-4 col-sm-4">
+	<h2>联系方式</h2>
+	<ul class="list">
+	<li><a href="#non"><img src="./static/images/icon_location.png"> 菲律宾  马尼拉  SMX展览中心</a></li>
+	<li><a href="#non"><img src="./static/images/icon_time.png"> 2019年7月</a></li>
+	<li><a href="#non"><img src="./static/images/icon_phone.png"> +63 945 503 1419 （周一至周日 8:00-18:00）</a></li>
+	<li><a href="#non"><img src="./static/images/icon_mail.png"> inquiry@phil-asiangamingexpo.com</a></li>
+	</ul>
+	</div>
+	<div class="col-md-4 col-sm-4">
+	<h2>社交平台</h2>
+	<ul class="list">
+	<li class="icons"><a href="#"><img src="./static/images/icon_wechat.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_sina.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_fb.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_twitter.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_linkin.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_google.png" class="icons"></a>
+	</li>
+	<li>&nbsp;</li>
+	<li><a href="#non"><strong>下载</strong></a></li>
+	<li><a href="#non">展位购买合同</a>  |  <a href="#non">标志规范</a></li>
+    </ul>
+	</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-8 col-sm-8"><p class="copy">Copyright © 2018 Phil-Asian Gaming Expo Management Ltd. Co., Philippines, All rights reserved  |  <a href="#non">隐私&免责声明</a>  |  <a href="non">版权</a></p>
+</div>
+<div class="col-md-4 col-sm-4">
+<div class="pull-right page-footermenu">
+        <div class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./static/images/icon_international.png"> 简体中文 <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu page-footermenu-drop">
+            <li><a href="#">简体中文 </a></li>
+            <li><a href="#">繁体中文</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+          </div>
+
+</div>
+</div>
+</div>
+
+</div>
+</footer>
+
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/ft-carousel.min.js"></script>
+	<script src="./static/js/countdown.js"></script>
+
+
+<script type="text/javascript">
+	$("#carousel_1").FtCarousel();
+	$("#carousel_2").FtCarousel();
+</script>
+<script>
+	function btn(){
+    var obtn = document.getElementById('btn');
+    obtn.onclick = function(){             
+        var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+        document.documentElement.scrollTop = document.body.scrollTop = -200;                       
+    };
+}
+</script>
+</html>

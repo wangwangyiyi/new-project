@@ -1,0 +1,126 @@
+.header-warp{
+	height: 110px;
+	width: 100%;
+}
+
+.nav-warp,.header{
+	margin: 0 170px;
+}
+.header-left{
+	float: left;
+	width: 50%;
+
+}
+.header-left img{
+	height: 45px;
+
+}
+.nav a:hover{
+	background: none!important;
+
+}
+.header-right{
+	text-align:right;
+	position: relative;
+	height: 45px;
+	line-height: 45px;
+	float: right;
+	width: 50%;
+}
+
+.header-right-search{
+	width: 30%;
+	background: #ececec;
+	height: 25px;
+	font-size: 12px;
+	display: inline-block;
+}
+.search-ico{
+	position: absolute;
+	left: 27%;
+	top: 35%;
+}
+.header-right-select{
+	width: 30%;
+	height: 30px;
+	font-size: 12px;
+	
+	display: inline-block;
+}
+
+/*头部结束*/
+.nav-warp{
+	width: 100%;
+	border: 0;
+	padding: 0;
+	height: 50px;
+}
+.nav-left{
+	width: 50%;
+	float: left;
+	line-height: 50px;
+
+}
+
+.nav-left ul{
+	width: 100%;
+}
+.nav-left li{
+	font-size: 16px;	
+	display: inline-block;
+	width: 38px;
+	margin: 5px 5px;
+
+}
+.nav-left a{
+	display: inline-block;
+	padding: 0!important;
+	height: 40px;
+	line-height: 40px;
+}
+.nav-left a:hover{
+	border-bottom: 3px solid #e70012;
+
+}
+.nav-right{
+	width: 50%;
+	float: left;
+	line-height: 50px;
+}
+.nav-right>div,.nav-right>p{
+	text-align: right;
+}
+.nav-right .countdown{
+	display: inline-block;
+}
+.nav-right .btn-login{
+	height: 50px;
+	display: inline-block;
+	line-height: 50px;
+	text-align: center;
+	background: -webkit-linear-gradient(left, #e80719 , #f35a67); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #e80719, #f35a67); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #e80719, #f35a67); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #e80719 , #f35a67); 
+}
+.btn-login a:hover{
+	color: white;
+
+}
+/*导航结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

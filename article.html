@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="./static/js/countdown.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	<script src="./static/js/countdown.js"></script>
+
+   <link rel="icon" href="./static/images/page_logo_favico.png" type="image/x-icon" />
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./static/css/page_huodong.css"  rel="stylesheet">
+    
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/article.css">
+
+<style>
+	.go-home {
+	position: fixed;
+	right: 28px;
+	width: 45px;
+	color: white;
+}
+.go-home-top p,i{
+	color: white;
+	margin-left: 3px;
+}
+
+.go-home-top{
+	width: 100%;
+	color: white;
+	padding: 10px 10px;
+	background: #ef4c59;
+}
+.go-home-bottow{
+	width: 100%;
+	color: white;
+	background: #505974;
+}
+.go-home-bottow i{
+	margin-left: 8px;
+}
+</style>
+	<title>展商详情</title>
+</head>
+<body class="body">
+
+	<!-- 头部开始 -->
+ <header id="mainhead" style="background:#f8f8f8;">
+ <div class="container">
+<nav class="navbar navbar-default nav-fix">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#page-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="./static/images/page_main_logo.png" class="img-responsive"></a>
+    </div>
+
+
+    <div class="collapse navbar-collapse margin-fix" id="page-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown navbordersmall">
+          <a href="#" class="dropdown-toggle toprightnav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./static/images/icon_international_blk.png"> 简体中文 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">简体中文 </a></li>
+            <li><a href="#">繁体中文</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </li>
+        <li class="navbordersmall"><a href="#" class="toprightnav">登录</a> / <a href="#" class="toprightnav">注册</a></li>
+        
+        <li class="visible-xs"><a href="index.html">首页</a></li>
+        <li class="visible-xs"><a href="shop.html">展商</a></li>
+        <li class="visible-xs"><a href="spectator.html">观众</a></li>
+        <li class="visible-xs"><a href="article.html">产品</a></li>
+        <li class="visible-xs"><a href="parenter.html">合作</a></li>
+
+        <li class="visible-xs active"><a href="huodong.html">活动</a></li>
+      </ul>
+      
+      <form class="navbar-form navbar-right">
+        <div class="form-group nav-position">
+        <div class="input-group">
+      <input type="text" class="form-control" placeholder="搜索">
+      <span class="input-group-btn">
+      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+       </div>
+       </div>
+         </form>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+  <ul class="nav navbar-nav hidden-xs nav-page">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="shop.html">展商</a></li>
+        <li><a href="spectator.html">观众</a></li>
+        <li><a href="article.html">产品</a></li>
+        <li><a href="parenter.html">合作</a></li>
+        <li class="active"><a href="huodong.html">活动</a></li>
+      </ul>
+      <ul class="nav navbar-nav pull-right nav-xs-fix50">
+      <li class="exhibitdays">离展会开始剩 <span id="day-day" class="remaining">99</span> 天</li>
+      <li><a href="#" class="register">立即参加</a></li>
+      </ul>
+</nav>
+</div>
+</header> 
+
+
+	<!-- 头部导航结束 -->
+
+<div class="go-home">
+		<div class="go-home-top">
+			<a href="">
+				<i class="fa fa-comment-o" style="font-size:24px"></i>
+				<p>联系我们</p>
+			</a>
+		</div>
+		<a href="">
+			<div onclick="btn()" class="margin-top-15 go-home-bottow">
+			<i class="fa fa-angle-up" style="font-size:36px"></i>
+		</div>
+		</a>
+	</div>
+
+
+
+
+	<div class="container article-main margin-top-30">		
+		<div class="article-warp">
+			<div class="article-left">
+				<div class="article-brand margin-top-30 text-center">
+					<img src="./static/img/article/brand.png" alt="">
+					<h3>博猫游戏</h3>
+					<p class="font-16">行有道，誉天下</p>
+					<div class="article-brand-desc clearfix">
+						<div class="article-brand-desc-left"><p><a href="">巅峰汇</a></p></div>
+						<div class="article-brand-desc-right"><p><a href="">赞助商</a></p></div>
+					</div>
+				</div>
+				<hr style="width: 90%;margin:0 auto;border: 0.5px solid #d7d7d7;">
+
+				<div class="article-desc">
+					<h4 class="left-border margin-top-30">&nbsp;&nbsp;&nbsp;展商简介</h4>
+					<p>博猫游戏拥有菲律宾颁发的（Phillippine Amousement and garming Cor-poration）博彩牌照.博彩集团有14个龙头企业，旗下拥有独立运营的支付，云集，客服与电话销售平台,珠集团与瑞士联邦计量局认证的IDQ合作研发出基于光子物理的游戏开奖模式，时间真正共平的游戏模式。与多家知名企业与金融，技术投资等多个领域保持长期合作</p>
+				</div>
+				<hr style="width: 90%;margin:0 auto;border: 0.5px solid #d7d7d7;">
+
+				<div class="article-call">
+					<h4 class="left-border">&nbsp;&nbsp;&nbsp;联系方式</h4>
+					<ul>
+						<li><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bomao88.com</li>
+						<li><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8977883928</li>
+						<li><a href=""><img src="./static/img/article/fb.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;twitter</li>
+						<li><a href=""><img src="./static/img/article/tw.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facebook</li>
+					</ul>
+				</div>
+				<div class="article-banner margin-top-30">
+					<img src="./static/img/article/left-banner.png" alt="">
+				</div>
+			</div>
+				<!-- 左侧结束 -->
+			
+			<div class="article-right">
+				<div class="article-head margin-top-30">
+					<h3>光量子物理的游戏开奖模式，实现公正的游戏模式</h3>
+					<div class="article-head-desc clearfix text-center ">
+						<ul class="clearfix">
+							<li><p>展位</p><p>S5</p></li>
+							<li><p>时间</p><p>07/20</p></li>
+							<li><p>内容形式</p><p>电子展览</p></li>
+							<li><p>类别</p><p>彩票游戏</p></li>
+							<li><p><a href=""  class="map">展位地图&nbsp;></a></p></li>
+						</ul>
+						<p class="fenxiang color ">分享到</p>
+						<div class="fenxiang-list">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+							<span>&nbsp;&nbsp;&nbsp;
+								<a href=""><img src="./static/img/article/fb.png" alt=""></a></span>
+							<span>&nbsp;&nbsp;&nbsp;
+								<a href=""><img src="./static/img/article/tw.png" alt=""></a></span>
+							<span>&nbsp;&nbsp;&nbsp;
+								<a href=""><img src="./static/img/article/wx.png" alt=""></a></span>
+							<span>&nbsp;&nbsp;&nbsp;
+								<a href=""><img src="./static/img/article/wb.png" alt=""></a></span>
+						</div>
+					</div>
+				</div>
+				<!-- 右侧头部 -->
+				<div class="article-main">
+					<h4 class="left-border">&nbsp;&nbsp;展览介绍</h4>
+					<a href=""><img src="./static/img/article/main.png" alt=""></a>
+					<p>如今的产品设计，无论优劣，都是听过视觉方式呈现的。因为人们日常组基本的试听组成单元是屏幕或者显示器。但是在物联网保卫的时代，设备可以听到我们的语言，预测我们需求，感知我们的手势，尤其是当屏幕小时的时候，这对于设计来说以为着什么？如今的产品设计，无论优劣，<br><br><br>都是听过视觉方式呈现的。因为人们日常组基本的试听组成单元是屏幕或者显示器。但是在物联网保卫的时代，设备可以听到我们的语言，预测我们需求，感知我们的手势，尤其是当屏幕小时的时候，这对于设计来说以为着什么？<br><br><br>如今的产品设计，无论优劣，都是听过视觉方式呈现的。因为人们日常组基本的试听组成单元是屏幕或者显示器。但是在物联网保卫的时代，设备可以听到我们的语言，预测我们需求，感知我们的手势，尤其是当屏幕小时的时候，这对于设计来说以为着什么？</p>
+				</div>
+				<hr style="width: 100%;margin:0 auto;border: 0.5px solid #d7d7d7;">
+				<div class="article-list clearfix">
+					<h3 class="left-border">&nbsp;&nbsp;产品展示</h3>
+					<div class="article-list-item ">
+						<img src="./static/img/article/list.png" alt="">
+							<div class="container">
+								<p class="bold font-16">龙虎斗</p>
+								<p>出色的成色质量，强悍的飞行能力</p>
+							</div>
+						</div>
+						<div class="article-list-item ">
+							<img src="./static/img/article/list.png" alt="">
+							<div class="container">
+								<p class="bold font-16">龙虎斗</p>
+								<p>出色的成色质量，强悍的飞行能力</p>
+							</div>
+						</div>
+						<div class="article-list-item ">
+							<img src="./static/img/article/list.png" alt="">
+							<div class="container">
+								<p class="bold font-16">龙虎斗</p>
+								<p>出色的成色质量，强悍的飞行能力</p>
+							</div>
+						</div>
+					</div>
+					<ul class="pagination">
+						<li><a href="#">&laquo;</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+						<li class="bold"><a href="">第一页，共十页</a></li>
+					</ul>
+				</div>
+			</div>	
+			<div class="clearfix"></div>
+			<div class="article-footer">
+				<h3 class="left-border margin-top-30">&nbsp;&nbsp;参展获益</h3>
+				<ul>
+					<li>1、了解新兴技术趋势</li>
+					<li>2、探究这一新浪潮对于设计和设计者的意义</li>
+					<li>3、探讨数字化世界中的人文问题</li>
+				</ul>
+			</div>
+			<div class="article-parenter margin-top-15 text-center">
+				<a href="">
+					<div class="article-parenter-left">
+							<div class="article-parenter-left-l">
+									<div class="glyphicon glyphicon-chevron-left"></div>
+							</div>
+							<div class="article-parenter-left-c">
+								<img src="./static/img/article/parenter.png" alt="">
+							</div>
+							<div class="article-parenter-left-r">
+								<div class="article-parenter-next">
+									<h3>上一个展商</h3>
+									<p class="bold">永动传奇</p>
+								</div>
+							</p>
+						</div>
+					</div>
+				</a>
+				<a href="">
+					<div class="article-parenter-right">
+						<div class="article-parenter-right-l">
+							<img src="./static/img/article/parenter.png" alt="">
+						</div>
+						<div class="article-parenter-right-c">
+							<div class="article-parenter-next">
+								<h3>下一个展商</h3>
+					  			<p class="bold">永动传奇</p>
+							</div>
+						</p>							
+						</div>
+						<div class="article-parenter-right-r">
+							<div class="	glyphicon glyphicon-chevron-right"></div>	
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 脚部开始 -->
+<div class="clearfix">	</div>
+
+<footer id="mainfooter">
+<div class="container">
+<div class="row">
+	<div class="col-md-4 col-sm-4">
+	<p><img src="./static/images/page_logo_reverse.png" class="img-responsive"></p>
+	<p>为你打开新局面<br>
+	Right Place, Right People.</p>
+	<p><img src="./static/images/pcor_logo.png">
+	</div>
+	<div class="col-md-4 col-sm-4">
+	<h2>联系方式</h2>
+	<ul class="list">
+	<li><a href="#non"><img src="./static/images/icon_location.png"> 菲律宾  马尼拉  SMX展览中心</a></li>
+	<li><a href="#non"><img src="./static/images/icon_time.png"> 2019年7月</a></li>
+	<li><a href="#non"><img src="./static/images/icon_phone.png"> +63 945 503 1419 （周一至周日 8:00-18:00）</a></li>
+	<li><a href="#non"><img src="./static/images/icon_mail.png"> inquiry@phil-asiangamingexpo.com</a></li>
+	</ul>
+	</div>
+	<div class="col-md-4 col-sm-4">
+	<h2>社交平台</h2>
+	<ul class="list">
+	<li class="icons"><a href="#"><img src="./static/images/icon_wechat.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_sina.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_fb.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_twitter.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_linkin.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_google.png" class="icons"></a>
+	</li>
+	<li>&nbsp;</li>
+	<li><a href="#non"><strong>下载</strong></a></li>
+	<li><a href="#non">展位购买合同</a>  |  <a href="#non">标志规范</a></li>
+    </ul>
+	</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-8 col-sm-8"><p class="copy">Copyright © 2018 Phil-Asian Gaming Expo Management Ltd. Co., Philippines, All rights reserved  |  <a href="#non">隐私&免责声明</a>  |  <a href="non">版权</a></p>
+</div>
+<div class="col-md-4 col-sm-4">
+<div class="pull-right page-footermenu">
+        <div class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./static/images/icon_international.png"> 简体中文 <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu page-footermenu-drop">
+            <li><a href="#">简体中文 </a></li>
+            <li><a href="#">繁体中文</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+          </div>
+
+</div>
+</div>
+</div>
+
+</div>
+</footer>
+
+
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/ft-carousel.min.js"></script>
+<script type="text/javascript">
+	$("#carousel_1").FtCarousel();
+	
+</script>
+<script>
+	 function btn(){
+    var obtn = document.getElementById('btn');
+    obtn.onclick = function(){             
+        var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+        document.documentElement.scrollTop = document.body.scrollTop = -200;                       
+    };
+}
+</script>
+</html>

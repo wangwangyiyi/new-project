@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="./static/js/countdown.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+
+
+     <link rel="icon" href="./static/images/page_logo_favico.png" type="image/x-icon" />
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./static/css/page_huodong.css"  rel="stylesheet">
+    
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/ft-carousel.css">
+    <link rel="stylesheet" href="./static/css/parenter.css">
+	<style>
+.example {height:750px;font-size: 40px;text-align: center;margin: 10px 170px;background-color: #464576;}
+.carousel-item{line-height: 336px;color: #fff;font-family:  Arial Black}
+.go-home {
+	position: fixed;
+	right: 28px;
+	width: 45px;
+	color: white;
+}
+.go-home-top p,i{
+	color: white;
+	margin-left: 3px;
+}
+
+.go-home-top{
+	width: 100%;
+	color: white;
+	padding: 10px 10px;
+	background: #ef4c59;
+}
+.go-home-bottow{
+	width: 100%;
+	color: white;
+	background: #505974;
+}
+.go-home-bottow i{
+	margin-left: 8px;
+}
+</style>
+<title>展商详情</title>
+</head>
+<body class="body">
+ <header id="mainhead" style="background:#f8f8f8;">
+ <div class="container">
+<nav class="navbar navbar-default nav-fix">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#page-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="./static/images/page_main_logo.png" class="img-responsive"></a>
+    </div>
+
+
+    <div class="collapse navbar-collapse margin-fix" id="page-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown navbordersmall">
+          <a href="#" class="dropdown-toggle toprightnav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./static/images/icon_international_blk.png"> 简体中文 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">简体中文 </a></li>
+            <li><a href="#">繁体中文</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </li>
+        <li class="navbordersmall"><a href="#" class="toprightnav">登录</a> / <a href="#" class="toprightnav">注册</a></li>
+        
+        <li class="visible-xs"><a href="index.html">首页</a></li>
+        <li class="visible-xs"><a href="shop.html">展商</a></li>
+        <li class="visible-xs"><a href="spectator.html">观众</a></li>
+        <li class="visible-xs"><a href="article.html">产品</a></li>
+        <li class="visible-xs"><a href="parenter.html">合作</a></li>
+
+        <li class="visible-xs active"><a href="huodong.html">活动</a></li>
+      </ul>
+      
+      <form class="navbar-form navbar-right">
+        <div class="form-group nav-position">
+        <div class="input-group">
+      <input type="text" class="form-control" placeholder="搜索">
+      <span class="input-group-btn">
+      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+       </div>
+       </div>
+         </form>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+  <ul class="nav navbar-nav hidden-xs nav-page">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="shop.html">展商</a></li>
+        <li><a href="spectator.html">观众</a></li>
+        <li><a href="article.html">产品</a></li>
+        <li><a href="parenter.html">合作</a></li>
+        <li class="active"><a href="huodong.html">活动</a></li>
+      </ul>
+      <ul class="nav navbar-nav pull-right nav-xs-fix50">
+      <li class="exhibitdays">离展会开始剩 <span id="day-day" class="remaining">99</span> 天</li>
+      <li><a href="#" class="register">立即参加</a></li>
+      </ul>
+</nav>
+</div>
+</header> 
+
+
+
+
+
+	<!-- <div class="go-home">
+		<div class="go-home-top">
+			<a href="">
+				<div onclick="btn()" class="margin-top-15 go-home-bottow">
+				<p>联系我们</p>
+			</a>
+		</div>
+		<a href="">
+			<div id="btn" class="margin-top-15 go-home-bottow">
+			<i class="fa fa-angle-up" style="font-size:36px"></i>
+		</div>
+		</a>
+	</div> -->
+	<!-- 头部开始 -->
+	
+	<!-- 头部导航结束 -->
+
+	<div class="banner-top">
+		<img src="./static/img/parenter/banner-top.png" alt="">
+	</div>
+
+	<div class="banner-parenter-warp  text-center">
+			<div class="parenter-banner">
+			<!-- 轮播开始 -->
+				<h3>赞助获益</h3>
+				<p class="font-16">遇见商业伙伴，但收获不止于此</p>
+				<img src="./static/img/parenter/line.png" alt="">
+				<div class="example">
+					<div class="ft-carousel" id="carousel_4">
+						<ul class="carousel-inner">
+							<li class="carousel-item">
+								<a href=""><img src="./static/img/parenter/banner-1.png" alt="arr" /></a>
+							</li>		
+						</ul>
+				</div>
+		<!-- 轮播结束 -->
+			</div>
+		</div>
+	</div>
+
+
+	<div class="start-parenter text-center">
+
+		<!-- <div class="start-parenter-warp">
+			<div class="parenter-box">
+			<a href=""><img src="./static/img/parenter/images/sp.png" alt=""></a>
+			<p class="margin-top-15">赞助合作</p>
+			<p class="margin-top-15"> SPONSOR PARTNER</p>
+		</div>
+		<div class="parenter-box">
+			<a href=""><img src="./static/img/parenter/images/me.png" alt=""></a>
+			<p class="margin-top-15">媒体合作</p>
+			<p class="margin-top-15">MEDIA PARTNER</p>
+		</div>
+		<div class="parenter-box">
+			<a href=""><img src="./static/img/parenter/images/ma.png" alt=""></a>
+			<p class="margin-top-15">稿件合作</p>
+			<p class="margin-top-15">MANUSCRIPT PARTNER</p>
+		</div>
+		<div class="parenter-box">
+			<a href=""><img src="./static/img/parenter/images/lk.png" alt=""></a>
+			<p class="margin-top-15">友链合作</p>
+			<p class="margin-top-15">LINK PARTNER</p>
+		</div>
+		<div class="parenter-box">
+			<a href=""><img src="./static/img/parenter/images/ad.png" alt=""></a>
+			<p class="margin-top-15">广告合作</p>
+			<p class="margin-top-15">AD PARTNER</p>
+		</div>
+		<div class="parenter-box">
+			<a href=""><img src="./static/img/parenter/images/su.png" alt=""></a>
+			<p class="margin-top-15">峰会专场合作</p>
+			<p class="margin-top-15">SUMMIT wangyi</p>
+		</div> -->
+		<a href=""><img src="./static/img/parenter/images/bg.png" alt=""></a>
+		<hr style="width: 90%;margin:0 auto;border: 0.5px solid white;">
+		<div class="clearfix"></div>
+		</div>
+		<div class="parenter-tel text-left">
+			<div class="tel-warp clearfix">
+				<h2 class="left-border">&nbsp;&nbsp;&nbsp;服务专员</h2>
+				<p>&nbsp;&nbsp;&nbsp;7x24小时，专属服务</p>
+				<div class="clearfix"></div>
+				<div class="margin-top-30 parenter-tel-box">
+					<div class=" parenter-tel-left">
+						<img src="./static/img/parenter/images/teacher-1.png" alt="">
+					</div>
+					<div class="parenter-tel-right">
+						<p>Mary Gao</p>
+						<ul>
+							<li><span class="fa fa-weixin"></span>&nbsp;&nbsp;&nbsp;88664334</li>
+							<li><span class="	glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;17788122312</li>
+							<li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;inquiry@phil-asiangamingexpo.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="parenter-tel-box margin-top-30">
+					<div class="parenter-tel-left">
+						<img src="./static/img/parenter/images/teacher-2.png" alt="">
+					</div>
+					<div class="parenter-tel-right">
+						<p>Eric</p>
+						<ul>
+							<li><span class="fa fa-weixin"></span>&nbsp;&nbsp;&nbsp;88664334</li>
+							<li><span class="	glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;17788122312</li>
+							<li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;inquiry@phil-asiangamingexpo.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="parenter-tel-box margin-top-30">
+					<div class="parenter-tel-left">
+						<img src="./static/img/parenter/images/teacher-3.png" alt="">
+					</div>
+					<div class="parenter-tel-right">
+						<p>Vivian C</p>
+						<ul>
+							<li><span class="fa fa-weixin"></span>&nbsp;&nbsp;&nbsp;88664334</li>
+							<li><span class="	glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;17788122312</li>
+							<li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;inquiry@phil-asiangamingexpo.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="parenter-tel-box margin-top-30">
+					<div class="parenter-tel-left">
+						<img src="./static/img/parenter/images/teacher-4.png" alt="">
+					</div>
+					<div class="parenter-tel-right">
+						<p>Leo</p>
+						<ul>
+							<li><span class="fa fa-weixin"></span>&nbsp;&nbsp;&nbsp;88664334</li>
+							<li><span class="	glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;17788122312</li>
+							<li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;inquiry@phil-asiangamingexpo.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 服务信息结束 -->
+
+<div class="text-center">
+	<div class="parenter clearfix">
+		<h1>合作伙伴</h1>
+		<p>强强联合,盛会因你而精彩</p>
+		<ul  class="clearfix">
+			<a href=""><li><img src="./static/img/parenter/1.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/2.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/3.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/4.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/5.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/6.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/7.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/8.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/9.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/10.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/11.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/12.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/13.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/14.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/15.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/16.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/17.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/18.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/19.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/20.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/21.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/22.png" alt=""></li></a>
+			<a href=""><li><img src="./static/img/parenter/23.png" alt=""></li></a>
+
+			<!-- <li class="border parenter-p"><a href=""><p>所有展商</p></a></li> -->
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 脚部开始 -->
+
+<footer id="mainfooter">
+<div class="container">
+<div class="row">
+	<div class="col-md-4 col-sm-4">
+	<p><img src="./static/images/page_logo_reverse.png" class="img-responsive"></p>
+	<p>为你打开新局面<br>
+	Right Place, Right People.</p>
+	<p><img src="./static/images/pcor_logo.png">
+	</div>
+	<div class="col-md-4 col-sm-4">
+	<h2>联系方式</h2>
+	<ul class="list">
+	<li><a href="#non"><img src="./static/images/icon_location.png"> 菲律宾  马尼拉  SMX展览中心</a></li>
+	<li><a href="#non"><img src="./static/images/icon_time.png"> 2019年7月</a></li>
+	<li><a href="#non"><img src="./static/images/icon_phone.png"> +63 945 503 1419 （周一至周日 8:00-18:00）</a></li>
+	<li><a href="#non"><img src="./static/images/icon_mail.png"> inquiry@phil-asiangamingexpo.com</a></li>
+	</ul>
+	</div>
+	<div class="col-md-4 col-sm-4">
+	<h2>社交平台</h2>
+	<ul class="list">
+	<li class="icons"><a href="#"><img src="./static/images/icon_wechat.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_sina.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_fb.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_twitter.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_linkin.png" class="icons"></a>
+	<a href="#"><img src="./static/images/icon_google.png" class="icons"></a>
+	</li>
+	<li>&nbsp;</li>
+	<li><a href="#non"><strong>下载</strong></a></li>
+	<li><a href="#non">展位购买合同</a>  |  <a href="#non">标志规范</a></li>
+    </ul>
+	</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-8 col-sm-8"><p class="copy">Copyright © 2018 Phil-Asian Gaming Expo Management Ltd. Co., Philippines, All rights reserved  |  <a href="#non">隐私&免责声明</a>  |  <a href="non">版权</a></p>
+</div>
+<div class="col-md-4 col-sm-4">
+<div class="pull-right page-footermenu">
+        <div class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="./static/images/icon_international.png"> 简体中文 <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu page-footermenu-drop">
+            <li><a href="#">简体中文 </a></li>
+            <li><a href="#">繁体中文</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+          </div>
+
+</div>
+</div>
+</div>
+
+</div>
+</footer>
+
+
+
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/ft-carousel.min.js"></script>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$("#carousel_4").FtCarousel();
+	
+</script>
+<script>
+	function btn(){
+    var obtn = document.getElementById('btn');
+    obtn.onclick = function(){             
+        var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+        document.documentElement.scrollTop = document.body.scrollTop = -200;                       
+    };
+}
+</script>
+</html>
